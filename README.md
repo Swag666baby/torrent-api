@@ -25,7 +25,7 @@ npm start
 ```typescript 
 import axios from "axios";
 
-const newUser = async() => {
+const addGame = async() => {
     const post = await axios.post("http://localhost:4000/add", 
     {
         "title": "Grand Theft Auto VI",
@@ -45,7 +45,7 @@ const newUser = async() => {
 ```typescript 
 import axios from "axios";
 
-const deleteUser = async() => {
+const deleteGame = async() => {
     const post = await axios.post("http://localhost:4000/delete", {"id": 1})
     console.log(post.data)
 }
@@ -55,7 +55,7 @@ const deleteUser = async() => {
 ```typescript 
 import axios from "axios";
 
-const searchUser = async() => {
+const searchGame = async() => {
     const request = await axios.get("http://localhost:4000/search?q=stardew")
     console.log(request.data)
 }
