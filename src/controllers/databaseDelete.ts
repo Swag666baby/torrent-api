@@ -6,7 +6,7 @@ export const databaseDelete = (game_to_be_removed: number) => {
         const database: Array<Game> = JSON.parse(readFileSync("./database/games/allGames.json").toString());
 	    const games: Array<Game> = database.filter(element => element.id !== game_to_be_removed);
 	
-        writeFileSync("./database/games/allGames.json", JSON.stringify([games], null, 2));
+        writeFileSync("./database/games/allGames.json", JSON.stringify(games, null, 2));
         return { status: "Successfully", code: 200, message: "game successfully deleted!" };
     }catch(error){
         console.log(error);
