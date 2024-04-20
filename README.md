@@ -52,6 +52,9 @@ const deleteGame = async() => {
 ```
 
 **• to search games 🔎**
+
+The search can be done by both name and id
+
 ```typescript 
 import axios from "axios";
 
