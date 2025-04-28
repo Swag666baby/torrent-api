@@ -13,8 +13,8 @@ npm install -g typescript
 
 ## running 
 ```bash
-git clone https://github.com/Swag666baby/nuvem-azul-api
-cd nuvem-azul-api
+git clone https://github.com/Swag666baby/torrent-api
+cd torrent-api
 npm install
 npm run build
 npm start
